@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Pangolin', cursive;
+}
+
+body{
+    height: 100vh;
+    background-color: #86E5FF;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    color: #0C1E7F;  
+    
+}
+
+.wrapper{
+    background-color: #5BC0F8;
+    height:70vh;
+    width:65vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    /* overflow: hidden; This would be useful if we were specifying a certain height 
+    for gameDetails and gameArea. but not useful now*/
+    border:solid black 3px;
+}
+
+.game-details{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    height:5vh;
+    border-bottom: black solid 3px;
+    
+    /* height: 5vh; */
+}
+
+.game-area{
+    background-color: #0081C9;
+    /* height:65vh; */
+    height: 65vh;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(20,1fr) / repeat(20,1fr);
+}
+
+.game-area .food{
+    background: red;
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.game-area .food i{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+.game-area .snake{
+    background: #210062;
+}
+
+.snake-head {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icons{
+    position: absolute;
+    left: 75%;
+    top: 40%;
+}
+
+.icons img{
+    width: 40px;
+    height: 40px;
+}
+
+.icons p{
+    display: inline;
+    font-size: 30px;
+}
+
+
